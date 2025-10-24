@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiskers Haven - Cat Shelter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #4a5568;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #667eea;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            background-color: #f7fafc;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 3rem;
+        }
+
+        .hero h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .cats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .cat-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .cat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .cat-card h3 {
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+        }
+
+        .cat-card .age {
+            color: #718096;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .ways-to-help {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .help-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .help-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            background-color: #f7fafc;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #667eea;
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🐱 Whiskers Haven</h1>
+        <p>A Safe Home for Abandoned Cats</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#cats">Adopt</a>
+        <a href="#help">Help Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <h2>Giving Every Cat a Second Chance</h2>
+            <p>At Whiskers Haven, we rescue, rehabilitate, and rehome abandoned cats. Every cat deserves love, care, and a forever home. With your help, we can make that happen.</p>
+            <a href="#cats" class="btn">Meet Our Cats</a>
+        </div>
+
+        <section id="about" class="section">
+            <h2>About Our Shelter</h2>
+            <p>Founded in 2018, Whiskers Haven is a no-kill shelter dedicated to rescuing abandoned and stray cats from our community. We provide medical care, nutritious food, and plenty of love while we search for their perfect forever homes.</p>
+            <p>Our experienced team of volunteers and veterinary partners ensure every cat receives the attention and care they deserve. We believe that no cat should be left behind, and we work tirelessly to give each one a new beginning.</p>
+        </section>
+
+        <section id="cats" class="section">
+            <h2>Cats Available for Adoption</h2>
+            <div class="cats-grid">
+                <div class="cat-card">
+                    <h3>Luna</h3>
+                    <p class="age">Age: 2 years | Female</p>
+                    <p>Luna is a gentle, affectionate tabby who loves to curl up in sunny spots. She's great with children and would thrive in a quiet home.</p>
+                </div>
+                <div class="cat-card">
+                    <h3>Oliver</h3>
+                    <p class="age">Age: 4 years | Male</p>
+                    <p>Oliver is a playful orange cat with a big personality. He enjoys interactive toys and would love an active family to play with.</p>
+                </div>
+                <div class="cat-card">
+                    <h3>Mittens</h3>
+                    <p class="age">Age: 6 months | Female</p>
+                    <p>Mittens is a curious kitten with distinctive white paws. She's energetic, social, and ready to bring joy to any household.</p>
+                </div>
+                <div class="cat-card">
+                    <h3>Shadow</h3>
+                    <p class="age">Age: 5 years | Male</p>
+                    <p>Shadow is a calm black cat who prefers peaceful environments. He's independent but loves evening cuddle sessions.</p>
+                </div>
+                <div class="cat-card">
+                    <h3>Bella</h3>
+                    <p class="age">Age: 3 years | Female</p>
+                    <p>Bella is a sweet calico who gets along with other cats. She's looking for a home where she can be part of a multi-cat family.</p>
+                </div>
+                <div class="cat-card">
+                    <h3>Max</h3>
+                    <p class="age">Age: 7 years | Male</p>
+                    <p>Max is a senior cat with lots of love to give. He's low-maintenance and perfect for someone looking for a calm companion.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="help" class="section">
+            <h2>Ways to Help</h2>
+            <div class="ways-to-help">
+                <div class="help-card">
+                    <h3>Adopt</h3>
+                    <p>Give a cat a forever home and gain a loving companion for life.</p>
+                </div>
+                <div class="help-card">
+                    <h3>Foster</h3>
+                    <p>Provide temporary care for cats until they find their permanent homes.</p>
+                </div>
+                <div class="help-card">
+                    <h3>Donate</h3>
+                    <p>Help us cover medical expenses, food, and shelter maintenance costs.</p>
+                </div>
+                <div class="help-card">
+                    <h3>Volunteer</h3>
+                    <p>Join our team and help with daily care, events, and socialization.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>Address:</strong> 123 Paw Street, Catville, CA 90210</p>
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <p><strong>Email:</strong> hello@whiskershaven.org</p>
+                <p><strong>Hours:</strong> Tuesday - Sunday, 10 AM - 6 PM</p>
+                <p style="margin-top: 1rem;">Visit us to meet our cats or schedule an appointment for a private meet-and-greet!</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Whiskers Haven Cat Shelter. All rights reserved.</p>
+        <p>Together, we can make a difference, one cat at a time. 🐾</p>
+    </footer>
+</body>
+</html>
